@@ -1,0 +1,15 @@
+body{background-color:#efefef;font-size:16px;min-width:320px}
+h1,h2,h3,hgroup,ul,p{padding:0;margin:0}
+img{width:100%}
+header{background-color:#eee;border-bottom:5px solid #000;overflow:hidden;padding:5px 0;position:fixed;width:100%;min-width:320px;text-align:center;z-index:2;}
+header #logo,header #titulo,header #user{display:inline-block;vertical-align:middle}
+header #logo,header #user{height:50px;width:50px}
+header #logo{float:left;margin-left:10px}
+header #main_nav{-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;background-color:#ddd;padding-top:1em;padding-bottom:.5em;}
+header #main_nav .menu_items{display:none;margin-top:1em}
+header #user{float:right;border:solid #fff 5px;margin-right:10px}
+header #titulo{width:50%;}
+header #titulo a{background-color:#fff;border:solid #000 3px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;color:#000;padding:5px 20px;text-decoration:none}
+header #titulo a:hover{border:solid 5px #b50000;color:#b50000;font-weight:bold}
+header #titulo h1{margin-bottom:10px}
+header #titulo li{display:block;list-style:none;margin-bottom:1em}

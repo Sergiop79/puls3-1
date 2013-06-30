@@ -1,0 +1,81 @@
+rojo = rgba(181,0,0,1)
+negro = rgba(0,0,0,1)
+gris = #eee
+
+border-radius()
+	-webkit-border-radius arguments
+	-moz-border-radius arguments
+	border-radius arguments
+
+
+body
+	background-color #efefef
+	font-size 16px
+	min-width 320px
+
+h1, h2, h3, hgroup, ul, p
+	padding 0
+	margin 0
+
+img
+	width 100%
+
+header
+	background-color gris   //color del header
+	border-bottom 5px solid negro
+	overflow hidden
+	padding 5px 0
+	position fixed
+	width 100%
+	min-width 320px
+	text-align center
+	z-index 2
+
+	#logo, #titulo, #user
+		display inline-block
+		vertical-align middle
+
+	#logo, #user
+		height 50px
+		width 50px
+
+	#logo
+		float left
+		margin-left 10px
+	
+	#main_nav
+		border-radius 5px
+		background-color #ddd
+		padding-top 1em
+		padding-bottom 0.5em
+
+		.menu_items
+			display	none
+			margin-top 1em
+	
+	#user
+		float right
+		border solid white 5px
+		margin-right 10px
+	
+	#titulo
+		width 50%
+		a
+			background-color white
+			border solid negro 3px
+			border-radius 5px
+			color negro
+			padding 5px 20px 
+			text-decoration none
+		a:hover
+			border solid 5px rojo
+			color rojo
+			font-weight bold
+
+		h1
+			margin-bottom 10px
+
+		li
+			display block
+			list-style none
+			margin-bottom 1em 
