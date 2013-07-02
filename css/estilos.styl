@@ -2,6 +2,8 @@ rojo = rgba(181,0,0,1)
 negro = rgba(0,0,0,1)
 gris = #eee
 
+@import "fonts.styl"
+
 border-radius()
 	-webkit-border-radius arguments
 	-moz-border-radius arguments
@@ -46,20 +48,8 @@ header
 	#main_nav
 		border-radius 5px
 		background-color #ddd
-		padding-top 1em
-		padding-bottom 0.5em
-
-		.menu_items
-			display	none
-			margin-top 1em
-	
-	#user
-		float right
-		border solid white 5px
-		margin-right 10px
-	
-	#titulo
-		width 50%
+		padding 1em 1em
+		
 		a
 			background-color white
 			border solid negro 3px
@@ -78,4 +68,21 @@ header
 		li
 			display block
 			list-style none
-			margin-bottom 1em 
+			
+		.menu_items
+			display	none
+			margin-top 2em
+			li
+				margin-top 1.5em
+	
+	#user
+		float right
+		border solid white 5px
+		margin-right 10px
+	
+	#titulo
+		width 50%
+
+		h1
+			color rojo
+			font-family 'LeckerliOneRegular'
