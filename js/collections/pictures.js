@@ -1,12 +1,15 @@
 var app = app || {};
 
 app.Pictures = Backbone.Collection.extend({
-	models: app.Picture
+	model: app.Picture,
+	url:'/base-data.json'
 });
 
+/*
 var pictures = new app.Pictures({
 	model: app.Picture,
 });
+
 
 pictures.fetch({
 	url:'/base-data.json',
@@ -17,3 +20,4 @@ pictures.fetch({
 		console.log("Hay un error en la carga del JSON");
 	}
 });
+*/

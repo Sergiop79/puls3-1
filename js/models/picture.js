@@ -25,7 +25,7 @@ app.Picture = Backbone.Model.extend({
 	defaults: {
 		title: "Titulo de la foto",
 		author: "Desconocido",
-		image: "img/bilbao",
+		image: "img/bilbao.jpg",
 		votes: "100"
 	},
 });
