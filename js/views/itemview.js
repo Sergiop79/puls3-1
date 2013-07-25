@@ -2,6 +2,7 @@ var app = app || {};
 
 app.ItemView = Backbone.View.extend({
 	initialize: function(model) {
+		this.model = model;
 		this.render();
 	},
 	events: {
@@ -16,11 +17,15 @@ app.ItemView = Backbone.View.extend({
 		return this;
 	},
 	upVote: function(e){
-		e.stopPropagation();
+		e.stopImmediatePropagation();
 		console.log("UPvote");
+		var votes = this.model.get("votes");
+		this.model.set("votes", parseInt(votes, 10) + 1);
+		this.model.save();
+		console.log(votes);
 	},
 	downVote: function(e){
-		e.stopPropagation();
+		e.stopImmediatePropagation();
 		console.log("DownVote");
 	}
 
