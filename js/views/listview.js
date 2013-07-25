@@ -18,7 +18,8 @@ app.ListView = Backbone.View.extend({
 		});
 	},
 	render: function(){
-		console.log("Hola");
+		this.collection.each(function(item){
+			 var vista = new app.ItemView(item); 	
+		});
 	}
-	
 });
