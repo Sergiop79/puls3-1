@@ -40,7 +40,7 @@ module.exports = function(app){
 	
 	edit  = (function(req,res){
 		fields = req.body
-		Picture.update({_id:req.params.id}, {$set: req.body}, function(error,picture){
+		Picture.update({_id:req.params.id}, {$set: {"votes":req.body.votes}}, function(error,picture){
 			res.send(picture);
 		})
 	});
