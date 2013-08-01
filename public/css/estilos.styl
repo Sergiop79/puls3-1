@@ -28,14 +28,12 @@ body
 			position relative
 			width 90%
 
-			a
-				color white
-				text-decoration none
 			figure
 				cursor pointer
 			.text
 				background rgba(0,0,0,0.6)
 				bottom 0
+				color white
 				font-family 'open_sansregular'
 				margin-bottom 0
 				position absolute
@@ -50,9 +48,16 @@ body
 					margin-bottom 0.2em
 					margin-top 0.2em
 
+			.up, .down
+				color white
+				cursor pointer
+				display block
+				margin-top 0.5em
+				margin-bottom 0.5 em
+
 			.points
 				color white
-				margin-top 5em
+				display block
 				font-weight bold
 			.votes
 				background rgba(0,0,0,0.7)
@@ -63,6 +68,22 @@ body
 				right 0
 				top 0
 				width 40px
+		#formulario
+			.entrada
+				border solid 0.7px negro
+				border-radius 3px
+				margin-top 1em
+				padding 0.5em 0.5em
+			.entrada:focus
+				box-shadow 0 0 3px rojo
+			button
+				border solid 0.7px rojo
+				border-radius 5px
+				margin-top 1em
+				margin-bottom 1em
+				padding 0.5em 0.8em
+			button:hover
+				border solid 0.7px negro
 								
 h1, h2, h3, hgroup, ul, p
 	padding 0
