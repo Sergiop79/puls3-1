@@ -17,8 +17,13 @@ function onDocumentReady(){
 		var m = new app.Picture();
 		m.set('title', $('#entrada').val());
 		m.set('author', $('#author').val());
-		m.set('image', $('#url').val());
-		m.save();
+		if($('#url').val() === ""){
+			alert("Debes introducir por lo menos la url de la imagen.")
+
+		} else {
+			m.set('image', $('#url').val());
+			m.save();
+		};
 		app.pictures.fetch();
 	});
 
