@@ -4,7 +4,7 @@ module.exports = function(app){
 
 	var Picture = require('../model/picture');
 
-	// Create a new person and save it
+	// Create a new pcture and save it
 	
 	picture = function(req,res){
 		var picture= new Picture({title: req.body.title, image: req.body.image, author:req.body.author, votes:req.body.votes});
